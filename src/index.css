@@ -1,0 +1,85 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--lenght: 250px;
+}
+
+.content {
+	width: 300px;
+	height: 300px;
+	margin: 30px auto;
+}
+.clock {
+	width: var(--lenght);
+	height: var(--lenght);
+	background-image: url(./clock.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.pt-hr {
+	position: absolute;
+	width: var(--lenght);
+	height: var(--lenght);
+	display: flex;
+	justify-content: center;
+}
+
+.pt-hr span {
+	border: 4px solid black;
+	height: 65px;
+	margin-top: 60px;
+	border-radius: 10px;
+}
+
+.pt-min {
+	width: var(--lenght);
+	height: var(--lenght);
+	display: flex;
+	justify-content: center;
+	position: absolute;
+}
+
+.pt-min span {
+	border: 3px solid black;
+	height: 90px;
+	margin-top: 35px;
+	border-radius: 10px;
+}
+
+.pt-sec {
+	width: var(--lenght);
+	height: var(--lenght);
+	display: flex;
+	justify-content: center;
+	position: absolute;
+}
+
+.pt-sec span {
+	border: 1px solid red;
+	height: 125px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.point {
+	width: var(--lenght);
+	height: var(--lenght);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+.point span {
+	width: 12px;
+	height: 12px;
+	background-color: red;
+	border-radius: 50%;
+}
